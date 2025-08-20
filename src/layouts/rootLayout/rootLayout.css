@@ -1,0 +1,31 @@
+.rootLayout{
+  padding: 16px 64px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+
+    > a{
+      display:flex;
+      align-items: baseline;
+      gap: 8px;
+      font-weight: 700;
+    }
+    > a img{
+      width: 64px;
+      height: 64px;
+      display: block;
+    }
+    > a span{
+      font-size: 25px;
+      line-height: 1;
+      transform: translateY(-12px);
+    }
+  }
+
+  main{ flex:1; overflow: hidden; }
+}
