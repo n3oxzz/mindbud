@@ -3,6 +3,7 @@ import './dashboardLayout.css'
 import { useEffect } from 'react';
 import { Outlet } from 'react-router'
 import { useNavigate } from 'react-router-dom'
+import ChatList from '../../components/chatList/ChatList';
 
 
 
@@ -21,7 +22,7 @@ const DashboardLayout = () => {
 
   return (
     <div className='dashboardLayout'>
-        <div className="menu">Menu</div>
+        <div className="menu"><ChatList/></div>
         <div className="content"><Outlet/></div>
     </div>
   )

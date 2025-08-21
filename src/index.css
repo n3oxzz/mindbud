@@ -1,9 +1,13 @@
+html, body, #root { height: 100%; }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24;
     background-color: #242424;
     color: white;
+    margin: 0;
 }
+
+*, *::before, *::after { box-sizing: border-box; }
 
 a{
     text-decoration: none;
